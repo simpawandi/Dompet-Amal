@@ -45,47 +45,6 @@
 
     <!-- Spinner End -->
 
-    <!-- Brand & Contact Start -->
-    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
-      <div class="row align-items-center top-bar">
-        <div class="col-lg-6 col-md-12 text-center text-lg-start">
-          <a href="" class="navbar-brand m-0 p-0">
-            <h1 class="fw-bold text-primary m-0">
-              <i class="fa fa-laptop-code me-3"></i>DAP
-            </h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
-          </a>
-        </div>
-        <div class="col-lg-6 col-md-7 d-none d-lg-block">
-          <div class="row">
-            <div class="col-6">
-              <div class="d-flex align-items-center justify-content-end">
-                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                  <i class="fa fa-phone text-primary"></i>
-                </div>
-                <div class="ps-3">
-                  <p class="mb-2">Call Us</p>
-                  <h6 class="mb-0">+012 345 6789</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="d-flex align-items-center justify-content-end">
-                <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                  <i class="far fa-envelope text-primary"></i>
-                </div>
-                <div class="ps-3">
-                  <p class="mb-2">Email Us</p>
-                  <h6 class="mb-0">info@example.com</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Brand & Contact End -->
-
     <!-- Navbar Start -->
 
     <nav
@@ -93,30 +52,102 @@
         navbar navbar-expand-lg navbar-dark
         sticky-top
         py-lg-0
-        px-lg-5
+        me-n1
         wow
         bg-primary
         fadeIn
-      "style="height: 60px;"
+      "
       data-wow-delay="0.1s"
+      style="height: 60px"
     >
-      <div class="row col-12">
-        <div class="col-3 mt-2">
-          <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
-          <a href="user "
-            ><i class="text-white fa fa-user"></i><span> user</span></a
-          >
+      <div class="row col-12" style="height: 60px">
+        <div class="col-2 pt-3">
+          <ul class="list-unstyled ms-3">
+            <li>
+              <a href="user "
+                ><i class="text-white fa fa-user"></i><span> Logo</span></a
+              >
+            </li>
+          </ul>
+          <!-- <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a> -->
         </div>
-        <div class="justify-content-center col-6 d-flex">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About Us</a>
+        <div class="col-7 d-flex justify-content-center pt-2">
+          <ul class="d-flex list-unstyled">
+            <li>
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+            </li>
+            <li>
+              <a href="laporan.html" class="nav-item nav-link">Laporan</a>
+            </li>
+            <li>
+              <a href="registrasi.html" class="nav-item nav-link">Registrasi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Donasi
+              </a>
+              <ul
+                class="dropdown-menu bg-dark"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Berobat</a></li>
+                <li><a class="dropdown-item" href="#">Pernikahan</a></li>
 
-          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <li><a class="dropdown-item" href="#">Musibah</a></li>
+                <li><a class="dropdown-item" href="#">Melahirkan</a></li>
+                <li><a class="dropdown-item" href="#">Aqiqah</a></li>
+                <li><a class="dropdown-item" href="donasi.html">More</a></li>
+              </ul>
+            </li>
+
+            <li><a href="about.html" class="nav-item nav-link">About Us</a></li>
+            <li>
+              <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </li>
+          </ul>
         </div>
 
-        <div class="col-3 text-end mt-1">
-          <input type="text" placeholder="search" />
-          <i class="fa fa-search text-white"></i>
+        <div
+          class="search col-3 text-end pt-3 d-flex me-n3"
+          style="height: 60px"
+        >
+          <ul class="d-flex list-unstyled">
+            <li>
+              <input type="text" placeholder="search" />
+              <i class="fa fa-search text-white"></i>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link justify-content-center ms-3 mt-n2"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ☰
+              </a>
+              <ul
+                class="drop dropdown-menu bg-dark"
+                aria-labelledby="navbarDropdown"
+                style="margin-left: -70px"
+              >
+                <li><a class="dropdown-item" href="#">user</a></li>
+                <li><a class="dropdown-item" href="#">Riwayat</a></li>
+
+                <li><a class="dropdown-item" href="#">Iuran</a></li>
+                <li><a class="dropdown-item" href="#">Laporan</a></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -171,7 +202,7 @@
             <p>Thank you, Chicago!</p>
           </div>
         </div>
-        <div class="carousel-item bg-warning">
+        <div class="carousel-item">
           <img src="#" alt="New York" class="d-block" style="width: 100%" />
           <div class="carousel-caption">
             <h3>Asep</h3>
@@ -219,439 +250,852 @@
     <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="fact-item bg-light rounded text-center h-100 p-5">
-              <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-              <h5 class="mb-3">Amal</h5>
+              <i class="fas fa-hand-holding-heart fa-4x text-primary mb-4"></i>
+
+              <h5 class="mb-3">Donasi</h5>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="fact-item bg-light rounded text-center h-100 p-5">
-              <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
-              <h5 class="mb-3">Informasi Rekening</h5>
+              <i class="fa fa-file-alt fa-4x text-primary mb-4"></i>
+
+              <h5 class="mb-3">Laporan</h5>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="fact-item bg-light rounded text-center h-100 p-5">
               <i class="fa fa-users fa-4x text-primary mb-4"></i>
-              <h5 class="mb-3">Pengajuan Bantuan</h5>
+              <h5 class="mb-3">Registrasi Donasi</h5>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+        </div>
+      </div>
+      <div class="container mt-4">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="fact-item bg-light rounded text-center h-100 p-5">
-              <i class="fa fa-check fa-4x text-primary mb-4"></i>
+              <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
+              <h5 class="mb-3">Profil</h5>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="fact-item bg-light rounded text-center h-100 p-5">
+              <i class="fas fa-file-medical fa-4x text-primary mb-4"></i>
+              <h5 class="mb-3">Riwayat Iuran</h5>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="fact-item bg-light rounded text-center h-100 p-5">
+              <i class="fas fa-plus fa-4x text-primary mb-4"></i>
               <h5 class="mb-3">More</h5>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-      <!-- wakaf -->
-      <div class="container mb-3 w-75 bg-light" style="height: 400px">
-        <div class="judul" style="height: 30px">wakaf</div>
-        <div id="wakaf" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#wakaf"
-              data-bs-slide-to="0"
-              class="active"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#wakaf"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#wakaf"
-              data-bs-slide-to="2"
-            ></button>
-          </div>
-
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row img">
-                <img
-                  src="img/carousel-1.jpg"
-                  alt="masjid"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
-              </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>Masjid agung</h6>
-                <h6>terkumpul <br />Rp 271.000</h6>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="img">
-                <img
-                  src="img/carousel-2.jpg"
-                  alt="Pesantren"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
-              </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>Pesantren</h6>
-                <h6>terkumpul <br />Rp 271.000</h6>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="img">
-                <img
-                  src="img/carousel-3.jpg"
-                  alt="Al quran"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
-              </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>Masjid agung</h6>
-                <h6>terkumpul <br />Rp 271.000</h6>
-              </div>
-            </div>
-          </div>
-
-          <!-- Left and right controls/icons -->
-          <button
-            class="carousel-control-prev mb-5"
-            type="button"
-            data-bs-target="#wakaf"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next mb-5"
-            type="button"
-            data-bs-target="#wakaf"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
+    <!-- berita-->
+    <div class="berita container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp news"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            <span class="news">News</span>
+          </h6>
         </div>
       </div>
-      <!-- wakaf end -->
-      <!-- infaq -->
-      <div class="container w-75 bg-light mb-3 mt-3" style="height: 400px">
-        <div class="judul" style="height: 30px">infaq</div>
-        <div id="infaq" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#infaq"
-              data-bs-slide-to="0"
-              class="active"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#infaq"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#infaq"
-              data-bs-slide-to="2"
-            ></button>
+
+      <div class="container mt-4">
+        <div class="row g-4 berita">
+          <!--berobat-->
+
+          <div
+            class="berobat col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div
+              class="fact-item rounded text-center h-250 p-1"
+              style="height: 400px"
+            >
+              <div class="judul m-2">
+                <a href="#"><i>Berobat</i></a>
+              </div>
+              <div id="berobat" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators tombol mb-n3">
+                  <button
+                    type="button"
+                    data-bs-target="#berobat"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#berobat"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#berobat"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active col-12">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev mb-5"
+                  type="button"
+                  data-bs-target="#berobat"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next mb-5"
+                  type="button"
+                  data-bs-target="#berobat"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
           </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row img">
-                <img
-                  src="#"
-                  alt="Beasiswa pecinta Alquran"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
+          <!--berobat end -->
+          <!-- pernikahan -->
+          <div
+            class="pernikahan col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div
+              class="fact-item rounded text-center h-250 p-1"
+              style="height: 400px"
+            >
+              <div class="judul m-2">
+                <a href="#"><i>pernikahan</i></a>
               </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>Beasiswa Pecinta Al quran</h6>
-                <h6>terkumpul <br />Rp 271.000</h6>
+              <div
+                id="pernikahan"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators tombol mb-n3">
+                  <button
+                    type="button"
+                    data-bs-target="#pernikahan"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#pernikahan"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#pernikahan"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev mb-5"
+                  type="button"
+                  data-bs-target="#pernikahan"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next mb-5"
+                  type="button"
+                  data-bs-target="#pernikahan"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
               </div>
             </div>
-
-            <div class="carousel-item">
-              <div class="img">
-                <img
-                  src="img/carousel-2.jpg"
-                  alt="Safari Dakwah"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
+          </div>
+          <!-- pernikahan end -->
+          <!-- musibah -->
+          <div
+            class="musibah col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div
+              class="fact-item rounded text-center h-250 p-1"
+              style="height: 400px"
+            >
+              <div class="judul m-2">
+                <a href="#"><i>musibah</i></a>
               </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>Safari Dakwah</h6>
-                <h6>terkumpul <br />Rp 271.000</h6>
+              <div id="musibah" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators tombol mb-n3">
+                  <button
+                    type="button"
+                    data-bs-target="#musibah"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#musibah"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#musibah"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev mb-5"
+                  type="button"
+                  data-bs-target="#musibah"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next mb-5"
+                  type="button"
+                  data-bs-target="#musibah"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="img">
-                <img
-                  src="img/carousel-3.jpg"
-                  alt="New York"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
+          </div>
+          <!-- musibah end -->
+        </div>
+        <div class="row g-4 berita mt-2">
+          <!--aqiqah-->
+          <div
+            class="aqiqah col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div
+              class="fact-item rounded text-center h-250 p-1"
+              style="height: 400px"
+            >
+              <div class="judul m-2">
+                <a href="#"><i>aqiqah</i></a>
               </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>Peduli pasca bencana</h6>
-                <h6>terkumpul <br />Rp 271.000</h6>
+              <div id="aqiqah" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators tombol mb-n3">
+                  <button
+                    type="button"
+                    data-bs-target="#aqiqah"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#aqiqah"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#aqiqah"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev mb-5"
+                  type="button"
+                  data-bs-target="#aqiqah"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next mb-5"
+                  type="button"
+                  data-bs-target="#aqiqah"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
               </div>
             </div>
           </div>
 
-          <!-- Left and right controls/icons -->
-          <button
-            class="carousel-control-prev mb-5"
-            type="button"
-            data-bs-target="#infaq"
-            data-bs-slide="prev"
+          <!--aqiqah end -->
+          <!-- melahirkan -->
+          <div
+            class="melahirkan col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.1s"
           >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next mb-5"
-            type="button"
-            data-bs-target="#infaq"
-            data-bs-slide="next"
+            <div
+              class="fact-item rounded text-center h-250 p-1"
+              style="height: 400px"
+            >
+              <div class="judul m-2">
+                <a href="#"><i>melahirkan</i></a>
+              </div>
+              <div
+                id="melahirkan"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators tombol mb-n3">
+                  <button
+                    type="button"
+                    data-bs-target="#melahirkan"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#melahirkan"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#melahirkan"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev mb-5"
+                  type="button"
+                  data-bs-target="#melahirkan"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next mb-5"
+                  type="button"
+                  data-bs-target="#melahirkan"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- melahirkan end -->
+          <!-- none -->
+          <div
+            class="none col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.1s"
           >
-            <span class="carousel-control-next-icon"></span>
-          </button>
+            <div
+              class="fact-item rounded text-center h-250 p-1"
+              style="height: 400px"
+            >
+              <div class="judul m-2">
+                <a href="#"><i>none</i></a>
+              </div>
+              <div id="none" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators tombol mb-n3">
+                  <button
+                    type="button"
+                    data-bs-target="#none"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#none"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#none"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img">
+                      <img src="img/wakaf1.jpg" alt="" />
+                    </div>
+                    <div class="d-flex">
+                      <div class="note mt-3 text-start col-6 ms-0">
+                        <h6>Masjid agung</h6>
+                        <h6>terkumpul <br />Rp 271.000</h6>
+                      </div>
+                      <div class="col-6 my-auto text-end">
+                        <a href="#">
+                          <button type="button" class="btn btn-primary me-1">
+                            Donate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev mb-5"
+                  type="button"
+                  data-bs-target="#none"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next mb-5"
+                  type="button"
+                  data-bs-target="#none"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- none end -->
         </div>
       </div>
-      <!-- infaq end -->
-      <!-- zakat -->
-      <div class="container w-75 bg-light mb-3 mt-3" style="height: 400px">
-        <div class="judul" style="height: 30px">zakat</div>
-        <div id="zakat" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#zakat"
-              data-bs-slide-to="0"
-              class="active"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#zakat"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#zakat"
-              data-bs-slide-to="2"
-            ></button>
-          </div>
+    </div>
 
-          <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row img">
-                <img
-                  src="img/carousel-1.jpg"
-                  alt="Los Angeles"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
-              </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>terkumpul <br />Rp 271.000</h6>
-              </div>
-            </div>
+    <!-- berita end -->
 
-            <div class="carousel-item">
-              <div class="img">
-                <img
-                  src="img/carousel-2.jpg"
-                  alt="Chicago"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
-              </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>terkumpul <br />Rp 271.000</h6>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="img">
-                <img
-                  src="img/carousel-3.jpg"
-                  alt="New York"
-                  class="d-block"
-                  style="width: 100%; height: 250px; border-radius: 40px"
-                />
-              </div>
-              <div class="row content mt-3" style="height: 100px">
-                <h6>terkumpul <br />Rp 271.000</h6>
-              </div>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i> Batam,Indonesia
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+062 822 8717 7114
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>dompetamal@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-secondary rounded-circle me-0"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
-
-          <!-- Left and right controls/icons -->
-          <button
-            class="carousel-control-prev mb-5"
-            type="button"
-            data-bs-target="#zakat"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next mb-5"
-            type="button"
-            data-bs-target="#zakat"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="index.html">Home</a>
+            <a class="btn btn-link" href="laporan.html">Laporan</a>
+            <a class="btn btn-link" href="registrasi.html">Registrasi</a>
+            <a class="btn btn-link" href="donasi.html">Donasi</a>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="contact.html">Contact Us</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Gallery</h5>
+            <div class="row g-2">
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded"
+                  src="img/project-1.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded"
+                  src="img/project-2.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded"
+                  src="img/project-3.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded"
+                  src="img/project-4.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded"
+                  src="img/project-5.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  class="img-fluid rounded"
+                  src="img/project-6.jpg"
+                  alt="Image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Develop</h5>
+            <a class="btn btn-link" href="">Dini</a>
+            <a class="btn btn-link" href="">Syahril</a>
+            <a class="btn btn-link" href="">Dimas</a>
+            <a class="btn btn-link" href="">Asep</a>
+            <a class="btn btn-link" href="">Pawandi</a>
+          </div>
         </div>
       </div>
-      <!-- zakat end -->
-
-      <!-- Footer Start -->
-      <div
-        class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn"
-        data-wow-delay="0.1s"
-      >
-        <div class="container py-5">
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-              <h5 class="text-light mb-4">Address</h5>
-              <p class="mb-2">
-                <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
-                USA
-              </p>
-              <p class="mb-2">
-                <i class="fa fa-phone-alt me-3"></i>+012 345 67890
-              </p>
-              <p class="mb-2">
-                <i class="fa fa-envelope me-3"></i>info@example.com
-              </p>
-              <div class="d-flex pt-2">
-                <a
-                  class="
-                    btn btn-square btn-outline-secondary
-                    rounded-circle
-                    me-1
-                  "
-                  href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  class="
-                    btn btn-square btn-outline-secondary
-                    rounded-circle
-                    me-1
-                  "
-                  href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="
-                    btn btn-square btn-outline-secondary
-                    rounded-circle
-                    me-1
-                  "
-                  href=""
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a
-                  class="
-                    btn btn-square btn-outline-secondary
-                    rounded-circle
-                    me-0
-                  "
-                  href=""
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h5 class="text-light mb-4">Quick Links</h5>
-              <a class="btn btn-link" href="">Home</a>
-              <a class="btn btn-link" href="">About Us</a>
-              <a class="btn btn-link" href="">Contact Us</a>
-              
-              
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h5 class="text-light mb-4">Gallery</h5>
-              <div class="row g-2">
-                <div class="col-4">
-                  <img
-                    class="img-fluid rounded"
-                    src="img/project-1.jpg"
-                    alt="Image"
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    class="img-fluid rounded"
-                    src="img/project-2.jpg"
-                    alt="Image"
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    class="img-fluid rounded"
-                    src="img/project-3.jpg"
-                    alt="Image"
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    class="img-fluid rounded"
-                    src="img/project-4.jpg"
-                    alt="Image"
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    class="img-fluid rounded"
-                    src="img/project-5.jpg"
-                    alt="Image"
-                  />
-                </div>
-                <div class="col-4">
-                  <img
-                    class="img-fluid rounded"
-                    src="img/project-6.jpg"
-                    alt="Image"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h5 class="text-light mb-4">Develop</h5>
-              <a class="btn btn-link" href="">Dini</a>
-              <a class="btn btn-link" href="">Syahril</a>
-              <a class="btn btn-link" href="">Dimas</a>
-              <a class="btn btn-link" href="">Asep</a>
-              <a class="btn btn-link" href="">Pawandi</a>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a href="#">Dompet_Amal.com</a>, All Right Reserved.
-              </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">Dompet_Amal.com</a>, All Right Reserved.
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Footer End -->
 
     <!-- Back to Top -->

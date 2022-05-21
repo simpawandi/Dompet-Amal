@@ -482,3 +482,80 @@
   font-weight: 600;
   text-transform: capitalize;
 }
+/* search */
+.search ul li a {
+  font-size: 20px;
+  font-weight: 300;
+}
+.berita h6 {
+  font-size: 30px;
+}
+.berita img {
+  width: 345px;
+  border-radius: 5px;
+  height: 250px;
+}
+.berita .note h6 {
+  font-size: 14px;
+}
+/* berita */
+.berita .news {
+  font-size: 30px;
+}
+.berita a {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: black;
+}
+.berobat .tombol button {
+  background-color: black;
+}
+.pernikahan .tombol button {
+  background-color: black;
+}
+.musibah .tombol button {
+  background-color: black;
+}
+.aqiqah .tombol button {
+  background-color: black;
+}
+.melahirkan .tombol button {
+  background-color: black;
+}
+.none .tombol button {
+  background-color: black;
+}
+
+/* berita end */
+/*donasi*/
+.donasi .donate {
+  font-size: 30px;
+}
+.card .card-header a {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.card .card-body img {
+  height: 80px;
+  width: 160px;
+}
+.card .card-body .paragraft a {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+/* donasi end */
+/* contact */
+.contact .contactus {
+  font-size: 30px;
+}
+/* contact end */
+/* about us */
+.about .aboutus {
+  font-size: 30px;
+}
+/* ebout us end */
