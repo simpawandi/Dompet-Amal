@@ -39,7 +39,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
-
   <body>
     <!-- Spinner Start -->
 
@@ -63,24 +62,17 @@
       <div class="row col-12" style="height: 60px">
         <div class="col-2 pt-3">
           <ul class="list-unstyled ms-3">
-            <li>
-              <a href="user "
-                ><i class="text-white fa fa-user"></i><span> Logo</span></a
-              >
-            </li>
+            <a class="navbar-brand" href="index1.php"> <img src="img/Logo.png" alt="" width="80" height="50" class="d-inline-block align-text-top"> <span class="text-warning">DAP</span>POLITEKNIK</a>
           </ul>
           <!-- <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a> -->
         </div>
         <div class="col-7 d-flex justify-content-center pt-2">
           <ul class="d-flex list-unstyled">
             <li>
-              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="index1.php" class="nav-item nav-link">Home</a>
             </li>
             <li>
               <a href="laporan.html" class="nav-item nav-link">Laporan</a>
-            </li>
-            <li>
-              <a href="registrasi.html" class="nav-item nav-link">Registrasi</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -109,8 +101,7 @@
 
             <li><a href="about.html" class="nav-item nav-link">About Us</a></li>
             <li>
-              <a href="contact.html" class="nav-item nav-link active"
-                >Contact Us</a
+              <a href="contact.html" class="nav-item nav-link ">Contact Us</a
               >
             </li>
           </ul>
@@ -140,13 +131,12 @@
                 aria-labelledby="navbarDropdown"
                 style="margin-left: -70px"
               >
-                <li><a class="dropdown-item" href="#">user</a></li>
+                <li><a class="dropdown-item" </a><?php echo $user;?></li>
                 <li><a class="dropdown-item" href="#">Riwayat</a></li>
-
                 <li><a class="dropdown-item" href="#">Iuran</a></li>
                 <li><a class="dropdown-item" href="#">Laporan</a></li>
-                <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                <li><a class="dropdown-item" href="contact.php">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#out">Log out</a></li>
               </ul>
             </li>
           </ul>
@@ -156,100 +146,10 @@
 
     <!-- Navbar End -->
 
-    <!-- carousel start -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="4"
-        ></button>
-      </div>
-
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active bg-danger">
-          <img src="#" alt="Los Angeles" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Dimas</h3>
-            <p>We had such a great time in LA!</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-primary">
-          <img src="#" alt="Chicago" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Dini</h3>
-            <p>Thank you, Chicago!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="#" alt="New York" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Asep</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-success">
-          <img src="#" alt="New York" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Pawandi</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-secondary">
-          <img src="#" alt="New York" class="d-block" style="width: 100%" />
-          <div class="carousel-caption bg-success">
-            <h3>Syahril</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Left and right controls/icons -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <!-- carousel end -->
+   
     <!--content-->
-    <!-- Contact Start -->
-    <div class="contact container-xxl py-5">
+    <!-- Registration Start -->
+    <div class="registrasi container-xxl py-5">
       <div class="container">
         <div
           class="text-center mx-auto mb-5 wow fadeInUp"
@@ -257,55 +157,67 @@
           style="max-width: 600px"
         >
           <h6 class="section-title bg-white text-center text-primary px-3">
-            <span class="contactus">Contact Us</span>
+            <span class="registration">Pengajuan DAP</span>
           </h6>
+        </div>
+      </div>
+        <div class="row g-0 justify-content-center">
+         <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="row g-4">
+              <div class="col-12">
+                <h6 class="text-start text-primary text-uppercase"><i class="fa fa-angle-right"></i>  Registrasi Permohonan Bantuan</h6>
+                <h6 class="text-start text-primary text-uppercase"><i class="fa fa-angle-right"></i>  Dan klaim Dompet Amal</h6>
+                <p> Silakan mengisi formulir permohonan ini kepada pengurus Dompet Amal Polibatam (DAP). Agar kami dapat melakukan proses bantuan dan klaim terhadap permohonan anda, tuliskan email yang masih berlaku di dalam kolom pesan.Lampirkan dokumen jika ada. Terimakasih .. </p>
+              </div>
+            </div>
         </div>
         <div class="row g-0 justify-content-center">
           <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.5s">
             <form>
               <div class="row g-3">
-                <div class="col-md-6">
+                <div class="col-12">
                   <div class="form-floating">
                     <input
                       type="text"
                       class="form-control"
                       id="name"
-                      placeholder="Your Name"
+                      placeholder="Nama"
                     />
-                    <label for="name">Your Name</label>
+                    <label for="name">Nama</label>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12">
                   <div class="form-floating">
                     <input
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Email"
                     />
-                    <label for="email">Your Email</label>
+                    <label for="email">Email</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
                     <input
-                      type="text"
+                      type="email"
                       class="form-control"
-                      id="subject"
-                      placeholder="Subject"
+                      id="email"
+                      placeholder="Email"
                     />
-                    <label for="subject">Subject</label>
+                    <label for="email">Jenis Permohonan</label>
                   </div>
                 </div>
+
                 <div class="col-12">
                   <div class="form-floating">
                     <textarea
                       class="form-control"
                       placeholder="Leave a message here"
-                      id="message"
+                      id="jns_prmhonan"
                       style="height: 200px"
                     ></textarea>
-                    <label for="message">Message</label>
+                    <label for="jns_prmhonan">Deskrpisi Permohonan</label>
                   </div>
                 </div>
                 <div class="col-12 text-center">
@@ -313,7 +225,7 @@
                     class="btn btn-primary rounded-pill py-3 px-5"
                     type="submit"
                   >
-                    Send Message
+                    Kirim
                   </button>
                 </div>
               </div>

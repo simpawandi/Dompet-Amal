@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(!isset($_SESSION["user"])){// jika sessio tidak ada maka kembali ke login
+header("Location : login page.php");
+exit;
+}
+
+$user=$_SESSION['user'];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,24 +72,17 @@
       <div class="row col-12" style="height: 60px">
         <div class="col-2 pt-3">
           <ul class="list-unstyled ms-3">
-            <li>
-              <a href="user "
-                ><i class="text-white fa fa-user"></i><span> Logo</span></a
-              >
-            </li>
+            <a class="navbar-brand" href="index1.php"> <img src="img/Logo.png" alt="" width="80" height="50" class="d-inline-block align-text-top"> <span class="text-warning"><b>DAP</span>POLITEKNIK</a></b>
           </ul>
           <!-- <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a> -->
         </div>
         <div class="col-7 d-flex justify-content-center pt-2">
           <ul class="d-flex list-unstyled">
             <li>
-              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="index1.php" class="nav-item nav-link active">Home</a>
             </li>
             <li>
-              <a href="laporan.html" class="nav-item nav-link">Laporan</a>
-            </li>
-            <li>
-              <a href="registrasi.html" class="nav-item nav-link">Registrasi</a>
+              <a href="#" class="nav-item nav-link">Laporan</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -107,11 +109,9 @@
               </ul>
             </li>
 
+            <li><a href="about.php" class="nav-item nav-link">About Us</a></li>
             <li>
-              <a href="about.html" class="nav-item nav-link active">About Us</a>
-            </li>
-            <li>
-              <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+              <a href="contact.php" class="nav-item nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -140,113 +140,37 @@
                 aria-labelledby="navbarDropdown"
                 style="margin-left: -70px"
               >
-                <li><a class="dropdown-item" href="#">user</a></li>
+                <li><a class="dropdown-item" href=""></a><?php echo $user;?></li>
                 <li><a class="dropdown-item" href="#">Riwayat</a></li>
-
                 <li><a class="dropdown-item" href="#">Iuran</a></li>
                 <li><a class="dropdown-item" href="#">Laporan</a></li>
-                <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                <li><a class="dropdown-item" href="contact.php">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#out">Log out</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Registrasi -->
+    <div class="modal fade" id="out" tabindex="-1" role="dialog" aria-labelledby="ModalcobaLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSayaLabel">Apakahh Anda Ingin Keluar ?</h5>
+                    <span aria-hidden="true">&times;</span>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                        <a href="index.php"><button type="button" class="btn btn-primary">Yes</button></a> 
+                    </div>
+                </div>
+            </div>
+          </div>
 
     <!-- Navbar End -->
 
-    <!-- carousel start -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="4"
-        ></button>
-      </div>
-
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active bg-danger">
-          <img src="#" alt="Los Angeles" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Dimas</h3>
-            <p>We had such a great time in LA!</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-primary">
-          <img src="#" alt="Chicago" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Dini</h3>
-            <p>Thank you, Chicago!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="#" alt="New York" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Asep</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-success">
-          <img src="#" alt="New York" class="d-block" style="width: 100%" />
-          <div class="carousel-caption">
-            <h3>Pawandi</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-secondary">
-          <img src="#" alt="New York" class="d-block" style="width: 100%" />
-          <div class="carousel-caption bg-success">
-            <h3>Syahril</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Left and right controls/icons -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <!-- carousel end -->
+   
     <!-- content start -->
     <div class="about container-xxl py-5">
       <div

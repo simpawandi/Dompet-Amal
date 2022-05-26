@@ -143,7 +143,7 @@
 
                 <li><a class="dropdown-item" href="#">Iuran</a></li>
                 <li><a class="dropdown-item" href="#">Laporan</a></li>
-                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="contact.php">Contact Us</a></li>
                 <li><a class="dropdown-item" href="#">Log Out</a></li>
               </ul>
             </li>
